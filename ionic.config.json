@@ -1,0 +1,7 @@
+{
+  "name": "self-page",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
