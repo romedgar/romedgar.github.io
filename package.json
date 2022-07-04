@@ -2,7 +2,7 @@
   "name": "self-page",
   "version": "0.0.1",
   "author": "Edgar Rojas",
-  "homepage": "http://romedgar.github.io/repository",
+  "homepage": "http://romedgar.github.io/romedgar.github.io",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
