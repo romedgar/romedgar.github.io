@@ -1,17 +1,96 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      About Me
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content [fullscreen]="true" class="background">
+  <ion-item>
+    <ion-label class="main-tittle">Hi, I'm Edgar a Software engineer Student!</ion-label>
+  </ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+            <ion-card>
+              <ion-img src="./assets/prof.jpg"></ion-img>
+              <ion-card-header>
+                <ion-card-title class="ion-card-inside">Heidelberg, Old Bridge Gate</ion-card-title>
+                <ion-card-subtitle class="ion-card-inside">The monkey is said to be good luck.</ion-card-subtitle>
+              </ion-card-header>
+              <ion-card-content class="ion-card-inside">
+                I am currently pursuing a bachelor degree in Software Engineering (Currently in my last semester)
+              </ion-card-content>
+            </ion-card>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-icon class="happy-face" name="happy-outline" style="margin-right: 10px"></ion-icon>
+          <label>Hey there, thank you for taking the time to visit my page!</label>
+        </ion-item>
+        <ion-item>
+          <p>
+            I've loved computers since I was a kid, and as soon as I learned coding, I knew I wanted to be in this revolutionary industry! 
+             My goal is to keep learning as much as I can and use that knowledge to solve complex problems.
+          </p>
+        </ion-item>
+        <ion-item>
+          <p>
+            Here you will find a quick overview of who I am, my skills and abilities, some of the most challenging projects I have made along with other interesting information about me, 
+            If you have any questions, feel free to reach out! 
+          </p>
+        </ion-item>
+        <ion-item>
+          <ion-button routerLink="tab2" color="secondary">Skills</ion-button>
+          <ion-button routerLink="tab3" color="secondary">Projects</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            Contact Information:  
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon class="happy-face" name="mail-outline" style="margin-right: 10px"></ion-icon>
+          <label>romedgerar@gmail.com</label>
+        </ion-item>
+        <ion-item>
+          <ion-icon class="happy-face" name="chatbubbles-outline" style="margin-right: 10px"></ion-icon>
+          <label>+52 311 193 1012</label>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-icon class="dark" name="person-outline" style="margin-right: 10px"></ion-icon>
+          <label>I'm twenty-two years old!</label>
+        </ion-item>
+        <ion-item>
+          <ion-icon class="earth" name="earth-outline" style="margin-right: 10px"></ion-icon>
+          <label>Tepic, Nayarit, México</label>
+        </ion-item>
+        <ion-item>
+          <ion-icon class="school" name="school-outline" style="margin-right: 10px"></ion-icon>
+          <label>Instituto Tecnológico de Tepic</label>
+        </ion-item>
+        <ion-item>
+          <ion-icon class="dark" name="chatbox-ellipses-outline" style="margin-right: 10px"></ion-icon>
+          <label>I speak English conversationally and a bit of French</label>
+        </ion-item>
+        <ion-item>
+          <ion-icon class="speed" name="speedometer-outline" style="margin-right: 10px"></ion-icon>
+          <label>I'm a fast learner</label>
+        </ion-item>
+        <ion-item>
+          <ion-icon class="dark" name="code-working-outline" style="margin-right: 10px"></ion-icon>
+          <label>I love writing and optimizing code</label>
+        </ion-item>
+        <ion-item>
+          <ion-icon class="earth" name="game-controller-outline" style="margin-right: 10px"></ion-icon>
+          <label>Gaming is my favorite pastime</label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

@@ -1,17 +1,164 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Projects
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-content [fullscreen]="true" class="background">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+            <ion-card>
+              <ion-img src="./assets/mythic.png"></ion-img>
+              <ion-card-header>
+                <ion-card-title class="ion-card-inside">Mythic Rabbit</ion-card-title>
+                <ion-card-subtitle class="ion-card-inside">Graphic Design Agency for Streamers
+                </ion-card-subtitle>
+              </ion-card-header>
+              <ion-card-content class="ion-card-inside">
+                <p>
+                  Mythic started like a place where I could test all the things I was learning back then (marketing mostly), its one of my biggest and favorite projects yet, It has taught me so much about running a business and how to create meaningful relations with customers, it has changed my life completely.
+                </p>
+                  <ion-button (click)="openUrl(1)" color="secondary">Learn More</ion-button>
+              </ion-card-content>
+            </ion-card>
+        </ion-item>
+        <ion-item>
+          <ion-card>
+            <ion-img src="./assets/codex.png"></ion-img>
+            <ion-card-header>
+              <ion-card-title class="ion-card-inside">Codex</ion-card-title>
+              <ion-card-subtitle class="ion-card-inside">Hybrid App for Card Games</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content class="ion-card-inside">
+              <p>
+                Sometimes keeping track of the stats of your card might be hard, Codex is a web and mobile application to track all your cards and its stats, it was made using Angular, Ionic, TS and FireStore.
+              </p>
+              <ion-button (click)="openUrl(2)" color="secondary">See Project in Github</ion-button>
+            </ion-card-content>
+          </ion-card>
+      </ion-item>
+      <ion-item>
+        <ion-card>
+          <ion-img src="./assets/loteria.jpg"></ion-img>
+          <ion-card-header>
+            <ion-card-title class="ion-card-inside">Loteria Game</ion-card-title>
+            <ion-card-subtitle class="ion-card-inside">Android Studio & Kotlin App</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content class="ion-card-inside">
+            <p>
+              The lottery is one of the most iconic Mexican games, it consists in a set of cards and a random maze, the first player to get all cards wins, in order to play you need someone to be shouting out the cards, with this app this is no longer necessary, using Kotlin and its threads I recorded my own voice and generated a random maze to play.
+            </p>
+            <ion-button (click)="openUrl(3)" color="secondary">See Project in Github</ion-button>
+          </ion-card-content>
+        </ion-card>
+    </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-card>
+            <ion-img src="./assets/API.png"></ion-img>
+            <ion-card-header>
+              <ion-card-title class="ion-card-inside">RESTful API</ion-card-title>
+              <ion-card-subtitle class="ion-card-inside">With MongoDB and NodeJS</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content class="ion-card-inside">
+              <p>
+                We made this project to understand a bit more about NoSQL databases and how to manage documents, Mongo and NodeJS are very interesting. We also used Postman to try some of our APIs.           
+              </p>
+              <ion-button (click)="openUrl(4)" color="secondary">See Project in Github</ion-button>
+             </ion-card-content>
+          </ion-card>
+      </ion-item>
+      <ion-item>
+        <ion-card>
+          <ion-img src="./assets/nayarit.jpg"></ion-img>
+          <ion-card-header>
+            <ion-card-title class="ion-card-inside">Discover Nayarit</ion-card-title>
+            <ion-card-subtitle class="ion-card-inside">Angular & TS Website</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content class="ion-card-inside">
+            <p>
+              Nayarit is an incredible place with so much things to explore, unique beaches, amazing food and a great weather, however, it doesn't have the visibility it deserves, that's why we made this app, so users can search everything they can do here, this website was made using Angular and Firebase.            </p>
+            <ion-button (click)="openUrl(7)" color="secondary">See Project in Github</ion-button>
+           </ion-card-content>
+        </ion-card>
+    </ion-item>
+    <ion-item>
+      <ion-card>
+        <ion-img src="./assets/day.png"></ion-img>
+        <ion-card-header>
+          <ion-card-title class="ion-card-inside">Sharing Photos</ion-card-title>
+          <ion-card-subtitle class="ion-card-inside">Kotlin & Firebase App</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content class="ion-card-inside">
+          <p>
+            This is the most recent project I've made in Android Studio, the idea behind the app is to share photos around an event, someone creates the event and shares the unique code to guests, after that they can all share their photos, I made this app using Firebase Autenthication, Firestore and Storage it is a very fun App.            </p>
+          <ion-button (click)="openUrl(8)" color="secondary">See Project in Github</ion-button>
+         </ion-card-content>
+      </ion-card>
+  </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-card>
+            <ion-img src="./assets/crud.png"></ion-img>
+            <ion-card-header>
+              <ion-card-title class="ion-card-inside">Mapping Business</ion-card-title>
+              <ion-card-subtitle class="ion-card-inside">CRUD with SQLite and Android Studio 
+                </ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content class="ion-card-inside">
+              <p>
+                SQLite is a great DBMS for mobile devices, in this project I had the opportunity to combine the SQL syntax is with Kotlin and android studio to keep track of the departments and subdepartments of a business, the final result is an Android App, I also made another variation with Firebase instead of SQLite.
+              </p>
+                <ion-button (click)="openUrl(5)" color="secondary">Learn More</ion-button>
+            </ion-card-content>
+          </ion-card>
+      </ion-item>        
+      <ion-item>
+        <ion-card>
+          <ion-img src="./assets/pwa.png"></ion-img>
+          <ion-card-header>
+            <ion-card-title class="ion-card-inside">React PWA</ion-card-title>
+            <ion-card-subtitle class="ion-card-inside"> 
+              Vite & React</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content class="ion-card-inside">
+            I wanted a way to consume the APIS made in our MongoDB Restful, that's why I chose to make not just any app, but a PWA which is the latest tendency, after the app was working, using our previous API was easy using React hooks, the project is not in Github yet, but I will update this project once it is!          </ion-card-content>
+        </ion-card>
+    </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-card>
+            <ion-img src="./assets/pizza.png"></ion-img>
+            <ion-card-header>
+              <ion-card-title class="ion-card-inside">Pizza Manager</ion-card-title>
+              <ion-card-subtitle class="ion-card-inside">Netbeans & Java App</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content class="ion-card-inside">
+              <p>
+                My team and I developed this app to help restaurant owners track everything, including sales, deliveries, supplies and current promotions, it's a very complete and unique app. We chose Java because back then was the programming language we felt more comfortable with.              </p>
+                <ion-button (click)="openUrl(6)" color="secondary">See Project in Github</ion-button>
+            </ion-card-content>
+          </ion-card>
+      </ion-item>
+      <ion-item>
+        <ion-card>
+          <ion-img src="./assets/packet.jpg"></ion-img>
+          <ion-card-header>
+            <ion-card-title class="ion-card-inside">Network Topologies</ion-card-title>
+            <ion-card-subtitle class="ion-card-inside">With Packet Tracer</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content class="ion-card-inside">
+            While I was learning networks I had to practice lots of topologies, I've gone from very basic networks to huge systems, I really enjoyed creating and setting up everything needed, VLANs, Subnetting, Security and different communications protocols.          </ion-card-content>
+        </ion-card>
+    </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
